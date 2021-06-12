@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomPlanetRotator : MonoBehaviour
@@ -11,7 +9,7 @@ public class RandomPlanetRotator : MonoBehaviour
 
     private void Start()
     {
-        _rotationDirection = GetRoationDirection();
+        _rotationDirection = GetRotationDirection();
     }
 
     private void FixedUpdate()
@@ -19,8 +17,6 @@ public class RandomPlanetRotator : MonoBehaviour
         transform.Rotate(_rotationDirection * speed * Time.fixedDeltaTime);
     }
 
-    private Vector3 GetRoationDirection()
-    {
-        return new Vector3(GetDirection, GetDirection, GetDirection);
-    }
+    private Vector3 GetRotationDirection() =>
+        new Vector3(GetDirection, GetDirection, GetDirection);
 }

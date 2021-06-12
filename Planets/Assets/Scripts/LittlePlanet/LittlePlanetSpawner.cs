@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LittlePlanetSpawner : MonoBehaviour
@@ -10,7 +9,7 @@ public class LittlePlanetSpawner : MonoBehaviour
     [SerializeField] private float minTime = 2;
     [SerializeField] private float maxTime = 3;
 
-    [SerializeField] private GameObject[] littlePlanets;
+    [SerializeField] private LittlePlanet[] littlePlanets;
 
     private void Start()
     {
@@ -22,11 +21,16 @@ public class LittlePlanetSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minTime, maxTime));
-            int randMassive = Random.Range(0, littlePlanets.Length);
-
-            Transform newObj = Instantiate(littlePlanets[randMassive], GetSpawnPosition(), Quaternion.identity).transform;
-            newObj.SetParent(transform);
+            SpawnPlanet();
         }
+    }
+
+    private void SpawnPlanet()
+    {
+        int randMassive = Random.Range(0, littlePlanets.Length);
+
+        Transform newObj = Instantiate(littlePlanets[randMassive], GetSpawnPosition(), Quaternion.identity).transform;
+        newObj.SetParent(transform);
     }
 
     private Vector3 GetSpawnPosition()

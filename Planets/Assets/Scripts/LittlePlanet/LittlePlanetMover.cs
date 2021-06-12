@@ -3,25 +3,26 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class LittlePlanetMover : MonoBehaviour
 {
-    public float speed = 100f;
-    public Rigidbody rb;
-    public Vector3 Movement;
+    [SerializeField] private float speed = 100f;
+
+    private Rigidbody _rb;
+    private Vector3 _direction;
 
     private void Start()
     {
-        Movement = (FindObjectOfType<PlanetsRotator>().transform.position - transform.position).normalized;
+        _direction = (FindObjectOfType<PlanetsRotator>().transform.position - transform.position).normalized;
 
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
     {
-        Move(Movement);
+        Move(_direction);
     }
 
     public void Move(Vector3 direction)
     {
-        rb.velocity = direction * speed * Time.fixedDeltaTime;
+        _rb.velocity = direction * speed * Time.fixedDeltaTime;
     }
 }
 

@@ -176,7 +176,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346616783}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -20, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -454,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2011307972
 Transform:
   m_ObjectHideFlags: 0
@@ -485,11 +485,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 190000981}
   endPosition: {fileID: 346616784}
-  minTime: 2
-  maxTime: 3
+  minTime: 0.4
+  maxTime: 1
   littlePlanets:
-  - {fileID: 67113710482936817, guid: be4ade0fa6ad131478639a722036c3ee, type: 3}
-  - {fileID: 4034356144117820018, guid: 0d96a412dc036704090237342b354396, type: 3}
+  - {fileID: 1589385643200939100, guid: be4ade0fa6ad131478639a722036c3ee, type: 3}
+  - {fileID: 626344503052851143, guid: 0d96a412dc036704090237342b354396, type: 3}
 --- !u!33 &215592837345830516
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 919132148252475393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1449991642}
   m_RootOrder: 0
@@ -602,8 +602,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0756abea6b30d14aae80f1149703995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temperature: 0
-  scaleCoefficient: 0
+  planetType: 1
+  secondPlanet: {fileID: 919132148252475395}
+  temperature: 500
+  scaleCoefficient: 1000
+  meltDelay: 0.1
+  temperatureCoefficient: 10
 --- !u!135 &919132147672309725
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -615,7 +619,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &919132148252475393
 GameObject:
@@ -663,8 +667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0756abea6b30d14aae80f1149703995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temperature: 0
-  scaleCoefficient: 0
+  planetType: -1
+  secondPlanet: {fileID: 919132147672309724}
+  temperature: -528
+  scaleCoefficient: 1000
+  meltDelay: 0.1
+  temperatureCoefficient: 10
 --- !u!135 &919132148252475396
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -676,7 +684,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.010889783
+  m_Radius: 1.2
   m_Center: {x: 0.00012405775, y: 0.00039908662, z: 0.000027215574}
 --- !u!23 &1079662025472196265
 MeshRenderer:

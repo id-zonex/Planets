@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4034356144117820019}
   - component: {fileID: 4034356144117820301}
   - component: {fileID: 964505836259061767}
+  - component: {fileID: 626344503052851143}
   m_Layer: 0
   m_Name: SmallICePlanet
   m_TagString: Untagged
@@ -127,9 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fac9b9441597184ab8314a7dbede684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  rb: {fileID: 0}
-  Movement: {x: 0, y: 0, z: 0}
+  speed: 500
 --- !u!114 &964505836259061767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +142,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &626344503052851143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034356144117820018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45b1813a111ea24eb7e638fe2342351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temperature: -50

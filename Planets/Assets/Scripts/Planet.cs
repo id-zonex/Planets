@@ -40,7 +40,7 @@ public class Planet : MonoBehaviour
         while (true)
         {
             Melt();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(meltDelay);
         }
     }
 
@@ -66,7 +66,7 @@ public class Planet : MonoBehaviour
         ChangeSize(temperature);
         CheckOnDeath();
 
-        ChangeTemperature?.Invoke(temperature * (int)planetType);
+        ChangeTemperature?.Invoke(this.temperature);
     }
 
     private void CheckOnDeath()

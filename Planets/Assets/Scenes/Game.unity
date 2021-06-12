@@ -1230,8 +1230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 190000981}
   endPosition: {fileID: 346616784}
-  minTime: 1
-  maxTime: 2
+  minTime: 0.5
+  maxTime: 1
   littlePlanets:
   - {fileID: 1589385643200939100, guid: be4ade0fa6ad131478639a722036c3ee, type: 3}
   - {fileID: 626344503052851143, guid: 0d96a412dc036704090237342b354396, type: 3}
@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetType: -1
   secondPlanet: {fileID: 919132147672309724}
-  temperature: -528
+  temperature: -500
   scaleCoefficient: 1000
   meltDelay: 0.1
   temperatureCoefficient: 700

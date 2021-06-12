@@ -8,15 +8,15 @@ public class Planet : MonoBehaviour
     public Action Death;
     public Action<float> ChangeTemperature;
 
-    [SerializeField] private PlanetType planetType;
-     
+    [Header("Planet Settings")]
+    [SerializeField] private PlanetType planetType; 
     [SerializeField] private Planet secondPlanet;
 
     [Header("Temperature Settings")]
     [SerializeField] private float temperature = 24;
     [SerializeField] private float scaleCoefficient = 1000;
 
-    [Header("Melting")]
+    [Header("Melting Settings")]
     [SerializeField] private float meltDelay = 0.1f;
     [SerializeField] private float temperatureCoefficient = 1000;
 
@@ -55,6 +55,8 @@ public class Planet : MonoBehaviour
     {
         if (planet == null) return;
 
+        CreateExplosion(planet.transform.position, planet.ExplosionParticle);
+
         AddTemperature(planet.Temperature);
         Destroy(planet.gameObject);
     }
@@ -80,6 +82,14 @@ public class Planet : MonoBehaviour
         float size = temperature / scaleCoefficient;
 
         transform.localScale += new Vector3(size, size, size) * (int)planetType;
+    }
+
+    private void CreateExplosion(Vector3 contactPoint, ParticleSystem explosion)
+    {
+        Vector3 direction = transform.position - contactPoint;
+        Transform particle = Instantiate(explosion, contactPoint, Quaternion.identity, null).transform;
+
+        particle.localRotation = Quaternion.LookRotation(-direction);
     }
 
     private void OnDeath()

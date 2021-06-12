@@ -155,3 +155,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temperature: -50
+  explosionParticle: {fileID: 552683025108768079, guid: 12858241c9594b74891e911bb119f1ab, type: 3}

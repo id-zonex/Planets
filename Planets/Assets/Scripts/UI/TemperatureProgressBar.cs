@@ -19,6 +19,19 @@ public class TemperatureProgressBar : MonoBehaviour
 
     private void OnChangeTemperature(float temperature)
     {
-        _progressBar.fillAmount = Mathf.Abs(temperature) / maxTemperature;
+        FillProgressBar(Mathf.Abs(temperature) / maxTemperature);
+
+        if(Mathf.Abs(temperature) <= 1)
+            Clear();
+    }
+
+    private void Clear()
+    {
+        FillProgressBar(0);
+    }
+
+    private void FillProgressBar(float percent)
+    {
+        _progressBar.fillAmount = percent;
     }
 }

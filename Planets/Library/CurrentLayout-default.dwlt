@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 1382
+  controlID: 27642
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 1429
+  controlID: 27643
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 1430
+  controlID: 27542
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,10 +250,10 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 13}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 13}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -424,9 +424,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6cf7ffffeefaffff
+      m_SelectedIDs: 54bb0000
+      m_LastClickedID: 47956
+      m_ExpandedIDs: 0893feff0606ffff4c2bffff522dfffff6baffffa4bcffffc4d9ffff30f8ffff0afbffffc4470000d44700002a4800002e480000505d0000605d0000745d00007c5d0000a05d0000ae5d0000ba5d0000045e00000a5e0000265e0000a6960000da96000040bb000054bb000082bb000096bb00009ebb0000e2bb0000f2bb000020bc0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -486,9 +486,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.603462, y: 8.618023, z: 5.0927954}
+    m_Target: {x: 0.13582104, y: 9.471652, z: -1.0357428}
     speed: 2
-    m_Value: {x: 7.603462, y: 8.618023, z: 5.0927954}
+    m_Value: {x: 0.13582104, y: 9.471652, z: -1.0357428}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0.0625, y: 0.0625}
+      m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
         m_Target: 0
@@ -535,13 +535,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.166243, y: -0.8050671, z: 0.30035266, w: 0.48379213}
+    m_Target: {x: 0.01711035, y: -0.9070001, z: 0.41915503, w: 0.037021697}
     speed: 2
-    m_Value: {x: -0.16623999, y: 0.8050525, z: -0.3003472, w: -0.48378336}
+    m_Value: {x: -0.01711035, y: 0.90700006, z: -0.41915503, w: -0.037021697}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 1.777638
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 1.777638
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -654,22 +654,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Programs\Unity\Unity Projects\Planets\Planets
+  m_LastProjectPath: "C:\\Users\\\u0410\u0434\u043C\u0456\u043D\\Planets\\Planets"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 16460000
-    m_LastClickedID: 17942
-    m_ExpandedIDs: 00000000d4450000d6450000d8450000da450000dc450000de450000e045000000ca9a3b
+    m_SelectedIDs: ec450000
+    m_LastClickedID: 17900
+    m_ExpandedIDs: 00000000aa450000ac450000ae450000b0450000b2450000b4450000b6450000ee4500004446000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4450000d6450000d8450000da450000dc450000de450000e045000000ca9a3b
+    m_ExpandedIDs: 00000000aa450000ac450000ae450000b0450000b2450000b4450000b6450000ee4500004446000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004a45000000a600000000000014f9ffff3a83ffff
     m_RenameOverlay:
       m_UserAcceptedRename: 0

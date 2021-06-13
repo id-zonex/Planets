@@ -28,6 +28,7 @@ public class GameOver : MonoBehaviour
 
     public void Home()
     {
+        Time.timeScale = 1;
         SceneManager.LoadSceneAsync("Menu");
     }
 }

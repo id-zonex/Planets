@@ -3,13 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private void Awake()
+    [SerializeField] private Audio A;
+
+    private void Start()
     {
+        A.PlayMainTheme();
+
         Time.timeScale = 1;
     }
 
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadSceneAsync("Game");
     }
 }

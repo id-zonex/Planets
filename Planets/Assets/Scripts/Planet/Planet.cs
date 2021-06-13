@@ -8,6 +8,8 @@ public class Planet : MonoBehaviour
     public Action Death;
     public Action<float> ChangeTemperature;
 
+    [SerializeField] private Audio audioPlayer;
+
     [Header("Planet Settings")]
     [SerializeField] private PlanetType planetType; 
     [SerializeField] private Planet secondPlanet;
@@ -56,6 +58,8 @@ public class Planet : MonoBehaviour
     private void CheckPlanet(LittlePlanet planet)
     {
         if (planet == null) return;
+
+        audioPlayer.PlayExplosionSound();
 
         CreateExplosion(planet.transform.position, planet.ExplosionParticle);
 

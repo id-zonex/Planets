@@ -123,6 +123,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &174992011
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.972018
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.0811
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 47.695717
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528120, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320351713163528127, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+--- !u!114 &174992012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2320351713163528126, guid: 277311fe539b37d4aa2778d16e4f4180, type: 3}
+  m_PrefabInstance: {fileID: 174992011}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717da17941dbbb247865c6144ac9e6a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &292275864
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +490,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2114922403}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 174992012}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1036,6 +1116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ff6c0e8406a954f918710b4a1e9105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  A: {fileID: 174992012}
 --- !u!4 &543450652807989845
 Transform:
   m_ObjectHideFlags: 0

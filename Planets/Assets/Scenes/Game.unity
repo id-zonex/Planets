@@ -709,7 +709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190000980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: -20}
+  m_LocalPosition: {x: 30, y: 0, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2011307972}
@@ -739,7 +739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346616783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 0, z: 20}
+  m_LocalPosition: {x: -30, y: 0, z: 30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2011307972}
@@ -3084,11 +3084,117 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 190000981}
   endPosition: {fileID: 346616784}
-  minTime: 0.5
-  maxTime: 1
+  minTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00082468754
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 5.1385508
+      value: 0.5054041
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2000
+      value: 0.49998304
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 200
+      value: 0.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 500
+      value: 0.6
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2000
+      value: 0.60184926
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  smallPlanetSpeed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 2.3952103
+      value: 500
+      inSlope: 1.0048134
+      outSlope: 1.0048134
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 500
+      value: 1000
+      inSlope: 0.028146315
+      outSlope: 0.028146315
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0335553
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2000
+      value: 1001.414
+      inSlope: 0.03029911
+      outSlope: 0.03029911
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06228589
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   littlePlanets:
-  - {fileID: 1589385643200939100, guid: 63202b18b1b36ed429f95e403a2c9e7f, type: 3}
-  - {fileID: 626344503052851143, guid: d389c31f681434041b7fdc970428b06b, type: 3}
+  - {fileID: 67113710482936819, guid: 63202b18b1b36ed429f95e403a2c9e7f, type: 3}
+  - {fileID: 4034356144117820301, guid: d389c31f681434041b7fdc970428b06b, type: 3}
 --- !u!4 &543450651860272480
 Transform:
   m_ObjectHideFlags: 0
@@ -3168,7 +3274,7 @@ MonoBehaviour:
   temperature: 500
   scaleCoefficient: 1000
   meltDelay: 0.1
-  temperatureCoefficient: 700
+  temperatureCoefficient: 500
 --- !u!135 &919132147672309725
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3284,7 +3390,7 @@ MonoBehaviour:
   temperature: -500
   scaleCoefficient: 1000
   meltDelay: 0.1
-  temperatureCoefficient: 700
+  temperatureCoefficient: 500
 --- !u!135 &919132148252475396
 SphereCollider:
   m_ObjectHideFlags: 0

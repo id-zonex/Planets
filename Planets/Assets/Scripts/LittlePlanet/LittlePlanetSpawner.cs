@@ -3,24 +3,35 @@ using UnityEngine;
 
 public class LittlePlanetSpawner : MonoBehaviour
 {
+    [Header("Borders")]
     [SerializeField] private Transform startPosition;
     [SerializeField] private Transform endPosition;
 
-    [SerializeField] private float minTime = 2;
-    [SerializeField] private float maxTime = 3;
+    [Header("Time")]
+    [SerializeField] private AnimationCurve  minTime;
+    [SerializeField] private AnimationCurve  maxTime;
 
-    [SerializeField] private LittlePlanet[] littlePlanets;
+    [Header("")]
+    [SerializeField] private AnimationCurve smallPlanetSpeed;
+    [SerializeField] private LittlePlanetMover[] littlePlanets;
+
+    private float _time;
 
     private void Start()
     {
         StartCoroutine(Spawner());
     }
 
+    private void Update()
+    {
+        _time += Time.deltaTime;
+    }
+
     private IEnumerator Spawner()
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(minTime, maxTime));
+            yield return new WaitForSeconds(Random.Range(minTime.Evaluate(_time), maxTime.Evaluate(_time)));
             SpawnPlanet();
         }
     }
@@ -29,8 +40,11 @@ public class LittlePlanetSpawner : MonoBehaviour
     {
         int randMassive = Random.Range(0, littlePlanets.Length);
 
-        Transform newObj = Instantiate(littlePlanets[randMassive], GetSpawnPosition(), Quaternion.identity).transform;
-        newObj.SetParent(transform);
+        LittlePlanetMover newObj = Instantiate(littlePlanets[randMassive], GetSpawnPosition(), Quaternion.identity);
+
+        newObj.Speed = smallPlanetSpeed.Evaluate(_time);
+
+        newObj.transform.SetParent(transform);
     }
 
     private Vector3 GetSpawnPosition()

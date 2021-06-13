@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class LittlePlanetMover : MonoBehaviour
 {
-    [SerializeField] private float speed = 100f;
+    public float Speed = 100;
 
     private Rigidbody _rb;
     private Vector3 _direction;
@@ -22,7 +22,7 @@ public class LittlePlanetMover : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
-        _rb.velocity = direction * speed * Time.fixedDeltaTime;
+        _rb.velocity = direction * Speed * Time.fixedDeltaTime;
     }
 }
 

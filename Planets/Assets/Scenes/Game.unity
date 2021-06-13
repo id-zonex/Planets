@@ -2847,8 +2847,8 @@ MonoBehaviour:
   minTime: 0.5
   maxTime: 1
   littlePlanets:
-  - {fileID: 1589385643200939100, guid: be4ade0fa6ad131478639a722036c3ee, type: 3}
-  - {fileID: 626344503052851143, guid: 0d96a412dc036704090237342b354396, type: 3}
+  - {fileID: 1589385643200939100, guid: 63202b18b1b36ed429f95e403a2c9e7f, type: 3}
+  - {fileID: 626344503052851143, guid: d389c31f681434041b7fdc970428b06b, type: 3}
 --- !u!4 &543450651860272480
 Transform:
   m_ObjectHideFlags: 0
